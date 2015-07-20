@@ -223,6 +223,8 @@ def main():
                         pages_crawled += 1
                         print pages_crawled
 
+                        ## Delete some common Wiktionary entry prefixes:
+                        
                         if wiki.english_short.startswith(
                                 "(Advanced Mandarin) "):
                             wiki.english_short = wiki.english_short[20:]
