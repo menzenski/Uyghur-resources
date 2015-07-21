@@ -94,6 +94,7 @@ class RowInTheLexicon(object):
     """
 
     def __init__(self, mandarin_cell):
+        """Initialize a new row object."""
         self.mandarin_cell = mandarin_cell
         self.index = 0
         self.whole = ''
@@ -104,6 +105,8 @@ class RowInTheLexicon(object):
 
 
     def get_lexicon_info(self, mandarin_cell):
+        # TODO: Change name (reserve 'get' prefix for actual getters)
+        """Split row into index (int) and Mandarin glosses (list)."""
         try:
             mysplit = mandarin_cell.split(",", 1)
             self.index = int(mysplit[0])
@@ -134,11 +137,10 @@ class RowInTheLexicon(object):
                     self.searchable = self.searchable[1:]
 
 class WiktionaryEntry(object):
-    """
-    Entry on en.wiktionary.org for a Mandarin term.
-    """
+    """Entry on en.wiktionary.org for a Mandarin term."""
 
     def __init__(self, mandarin_term):
+        """Initialize an object for a Mandarin term."""
         self.mandarin_term = mandarin_term
         self.english = []
         self.english_str = ', '.join(self.english)
@@ -146,7 +148,7 @@ class WiktionaryEntry(object):
         self.address = "http://en.wiktionary.org/wiki/" + mandarin_term
 
     def check_page(self):
-        """Load the actual wiktionary page for a term."""
+        """Load the actual wiktionary page for a term if it exists."""
         try:
             #html = urllib.urlopen(self.address).read()
             myopener = MyOpener()
