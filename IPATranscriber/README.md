@@ -18,11 +18,11 @@ Returns the output:
 ```
 yéziliq;jeziliqʰ
 zeple-;zɛplɛ-
-yashliq;jaʃliqʰ
+yashliq;jaʃliq
 a'ile;aˀilɛ
 ```
 
 The IPA output is largely a one-to-one substitution of graphs or digraphs for
-their phonemic values, with the exception that aspiration is blocked consonants.
+their phonemic values, with the exception that aspiration is blocked before consonants.
 Future versions of this script will take other orthographies (i.e., Uyghur
 Perso-Arabic script and Uyghur Cyrillic) as input.
