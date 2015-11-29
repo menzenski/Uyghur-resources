@@ -9,5 +9,9 @@ automated speech-recognition system for the Uyghur language.
 transcriptions (in the International Phonetic Alphabet) of Uyghur words in
 Latin orthography.
 
+* **UyghurTransliterator** contains a Python script which transliterates an
+input file (in Uyghur) from one writing system to another. Nine writing
+systems are currently supported.
+
 * **WiktionaryScraper** contains a Python script which fetches English
 translations of Mandarin words from [Wiktionary](https://en.wiktionary.org).
